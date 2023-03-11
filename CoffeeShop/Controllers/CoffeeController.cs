@@ -28,7 +28,7 @@ namespace CoffeeShop.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var coffee = _coffeeRepository.Get(id);
+            var coffee = _coffeeRepository.GetById(id);
             if (coffee == null)
             {
                 return NotFound();

@@ -66,7 +66,7 @@ namespace CoffeeShop.Repositories
             }
         }
 
-        public Coffee Get(int id)
+        public Coffee? GetById(int id)
         {
             using (var conn = Connection)
             {
